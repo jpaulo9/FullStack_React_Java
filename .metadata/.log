@@ -9092,3 +9092,68 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 15:29:06.159
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.SKktagTx => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 16:20:20.204
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 16:20:20.205
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@240844b6[org.springframework.tooling.boot.ls:1.36.0.202206171137(id=567)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 16:20:20.205
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 16:20:39.741
+!MESSAGE Boot LS startup time from start to initialized: 19534ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 16:20:42.202
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.GDQwgJDcisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 16:20:42.203
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 16:20:42.204
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 16:20:42.205
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 16:20:42.206
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.GDQwgJDc => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 16:20:42.206
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 16:20:42.215
+!MESSAGE classpath=109 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 16:20:42.220
+!MESSAGE buffering callback sts4.classpath.GDQwgJDc backend false 109
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 16:20:42.220
+!MESSAGE executing callback sts4.classpath.GDQwgJDc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 16:20:44.431
+!MESSAGE executing callback sts4.classpath.GDQwgJDc FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-07-17 16:20:44.432
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 16:20:52.702
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.GDQwgJDc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 16:20:52.703
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.GDQwgJDc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 16:20:52.703
+!MESSAGE subsribers = {sts4.classpath.kjOeZDRz=Send Classpath Notifications(147)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 16:20:52.704
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.GDQwgJDc => OK
