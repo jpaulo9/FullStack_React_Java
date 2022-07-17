@@ -8,9 +8,9 @@ function Header() {
       <div className="dsmeta-logo-container">
         
             <img src={logo} alt="DSMeta"/>
-            <h1>DSMeta</h1>
+            <h1>FullStack com Java e ReactNative</h1>
             <p>
-            <a href="linkedin.com/in/jpaulohdev97"> Dev Jpauloh9</a>
+            <a href="#"> Dev Jpauloh9</a>
             </p>
         </div>
     </header>
